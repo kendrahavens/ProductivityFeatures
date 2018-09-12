@@ -113,7 +113,7 @@ namespace Productivity15._8
         // Type (Ctrl + .) to remove the extra parenthesis.
         public void RemoveParenthesis()
         {
-            if ((true) && !(2 > 1)) { }
+            if (true && !(2 > 1)) { }
         }
 
         // Place your cursor in the for loop statement.
