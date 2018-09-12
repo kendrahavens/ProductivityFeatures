@@ -136,11 +136,18 @@ namespace Productivity15._8
         public void LinqToForEach()
         {
             List<string> greetings = new List<string>() { "hi", "yo", "hello", "howdy" };
+            IEnumerable<string> enumerable()
+            {
+                foreach (var greet in greetings)
+                {
+                    if (greet.Length < 3)
+                    {
+                        yield return greet;
+                    }
+                }
+            }
 
-            IEnumerable<string> shortGreeting =
-                from greet in greetings
-                where greet.Length < 3
-                select greet;
+            IEnumerable<string> shortGreeting = enumerable();
         }
 
         // Use Go to Enclosing Block to jump to the top of the block your cursor is in.
