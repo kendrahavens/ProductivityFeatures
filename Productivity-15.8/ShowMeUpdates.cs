@@ -47,33 +47,33 @@ namespace Productivity15._8
         {
             var tru = true;
             //Bool expressions
-            if (tru)
-            {
-                Console.WriteLine("Truth!");
-            }
-            else
+            if (!tru)
             {
                 Console.WriteLine("Falsehood!");
             }
+            else
+            {
+                Console.WriteLine("Truth!");
+            }
 
             // Comparisons
-            if (1 > 2)
-            {
-                Console.WriteLine("Change places!");
-            }
-            else
+            if (1 <= 2)
             {
                 Console.WriteLine("Okay!");
             }
+            else
+            {
+                Console.WriteLine("Change places!");
+            }
 
             // Multiple conditions
-            if (0 == 0 && true || true)
+            if ((0 != 0 || false) && false)
             {
-                Console.WriteLine("AlwaysTrue");
+                Console.WriteLine("Unreachable");
             }
             else
             {
-                Console.WriteLine("Unreachable");
+                Console.WriteLine("AlwaysTrue");
             }
         }
 
