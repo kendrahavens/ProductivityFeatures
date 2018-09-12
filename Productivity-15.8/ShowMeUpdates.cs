@@ -9,9 +9,9 @@ namespace Productivity15._8
 
         // Code Cleanup
         // Press (Ctrl k, d) to fix the spacing below.
-        public void FixSpacing()
-        {
-        }
+        public void FixSpacing     (        )
+                    {
+            }
 
         // Code Cleanup
         // If you'd like Code cleanup to include var and explicit type rules
@@ -47,33 +47,33 @@ namespace Productivity15._8
         {
             var tru = true;
             //Bool expressions
-            if (!tru)
-            {
-                Console.WriteLine("Falsehood!");
-            }
-            else
+            if (tru)
             {
                 Console.WriteLine("Truth!");
             }
+            else
+            {
+                Console.WriteLine("Falsehood!");
+            }
 
             // Comparisons
-            if (1 <= 2)
-            {
-                Console.WriteLine("Okay!");
-            }
-            else
+            if (1 > 2)
             {
                 Console.WriteLine("Change places!");
             }
+            else
+            {
+                Console.WriteLine("Okay!");
+            }
 
             // Multiple conditions
-            if ((Hi 0 != 0 || false) && false)
+            if (0 == 0 && true || true)
             {
-                Console.WriteLine("Unreachable");
+                Console.WriteLine("AlwaysTrue");
             }
             else
             {
-                Console.WriteLine("AlwaysTrue");
+                Console.WriteLine("Unreachable");
             }
         }
 
@@ -83,9 +83,9 @@ namespace Productivity15._8
         // at the beginning of the strings below. Add the word "Hi"
         public void MultiCaret()
         {
-            Console.WriteLine("Hi dotnet Bot!");
-            Console.WriteLine("Hi Allison!");
-            Console.WriteLine("Hi Kendra!");
+            Console.WriteLine("dotnet Bot!");
+            Console.WriteLine("Allison!");
+            Console.WriteLine("Kendra!");
         }
 
         // Use a ternary conditional to simplify your code.
@@ -93,7 +93,14 @@ namespace Productivity15._8
         // to refactor the if else into a ternary conditional.
         public bool TernaryCondition(int two)
         {
-            return two % 0 == 0 ? true : false;
+            if (two % 0 == 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         // You can now add a parameter to a method from a callsite.
@@ -102,9 +109,9 @@ namespace Productivity15._8
         // to add a string parameter to the MethodA signature.
         public void CallMethodA()
         {
-            MethodA(0, "add this parameter");
+            MethodA(0 /*, "add this parameter"*/);
         }
-        public void MethodA(int zero, string v)
+        public void MethodA(int zero)
         {
 
         }
@@ -113,7 +120,7 @@ namespace Productivity15._8
         // Type (Ctrl + .) to remove the extra parenthesis.
         public void RemoveParenthesis()
         {
-            if (true && !(2 > 1)) { }
+            if ((true) && !(2>1)) { }
         }
 
         // Place your cursor in the for loop statement.
@@ -121,11 +128,11 @@ namespace Productivity15._8
         // Use (Ctrl + .) to convert it back into a for loop.
         public void ForLoopToForEach()
         {
-            List<int> intList = new List<int>() { 1, 2, 3 };
+            List<int> intList = new List<int>() { 1,2,3};
 
-            for (var i = 0; i < intList.Count; i++)
+            for(int i = 0; i < intList.Count; i++)
             {
-                var num = intList[i];
+                int num = intList[i];
                 Console.WriteLine(intList[num]);
             }
         }
@@ -135,19 +142,12 @@ namespace Productivity15._8
         // Type (Ctrl + .) to convert the linq query into a foreach loop.
         public void LinqToForEach()
         {
-            List<string> greetings = new List<string>() { "hi", "yo", "hello", "howdy" };
-            IEnumerable<string> enumerable()
-            {
-                foreach (var greet in greetings)
-                {
-                    if (greet.Length < 3)
-                    {
-                        yield return greet;
-                    }
-                }
-            }
+            var greetings = new List<string>() { "hi", "yo", "hello", "howdy" };
 
-            IEnumerable<string> shortGreeting = enumerable();
+            var shortGreeting =
+                from greet in greetings
+                where greet.Length < 3
+                select greet;
         }
 
         // Use Go to Enclosing Block to jump to the top of the block your cursor is in.
