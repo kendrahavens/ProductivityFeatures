@@ -102,9 +102,9 @@ namespace Productivity15._8
         // to add a string parameter to the MethodA signature.
         public void CallMethodA()
         {
-            MethodA(0 /*, "add this parameter"*/);
+            MethodA(0, "add this parameter");
         }
-        public void MethodA(int zero)
+        public void MethodA(int zero, string v)
         {
 
         }
