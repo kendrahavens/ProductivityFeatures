@@ -93,14 +93,7 @@ namespace Productivity15._8
         // to refactor the if else into a ternary conditional.
         public bool TernaryCondition(int two)
         {
-            if (two % 0 == 0)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            return two % 0 == 0 ? true : false;
         }
 
         // You can now add a parameter to a method from a callsite.
