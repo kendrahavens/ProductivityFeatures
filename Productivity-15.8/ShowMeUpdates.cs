@@ -67,7 +67,7 @@ namespace Productivity15._8
             }
 
             // Multiple conditions
-            if ((0 != 0 || false) && false)
+            if ((Hi 0 != 0 || false) && false)
             {
                 Console.WriteLine("Unreachable");
             }
@@ -83,9 +83,9 @@ namespace Productivity15._8
         // at the beginning of the strings below. Add the word "Hi"
         public void MultiCaret()
         {
-            Console.WriteLine("dotnet Bot!");
-            Console.WriteLine("Allison!");
-            Console.WriteLine("Kendra!");
+            Console.WriteLine("Hi dotnet Bot!");
+            Console.WriteLine("Hi Allison!");
+            Console.WriteLine("Hi Kendra!");
         }
 
         // Use a ternary conditional to simplify your code.
