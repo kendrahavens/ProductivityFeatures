@@ -20,10 +20,10 @@ namespace Productivity15._8
         // Now press (Ctrl + k, d) to "fix" the types below.
         public void FixMyType()
         {
-            int myint = 0;
-            string mystring = "Hello, world!";
-            double myfloat = 0.2;
-            bool mybool = true;
+            var myint = 0;
+            var mystring = "Hello, world!";
+            var myfloat = 0.2;
+            var mybool = true;
             Console.WriteLine(myint.ToString(), mystring, myfloat, mybool);
         }
 
@@ -37,7 +37,7 @@ namespace Productivity15._8
             // csharp_style_var_for_built_in_types = false:suggestion to true.
             // It should read: csharp_style_var_for_built_in_types = true:suggestion
             // Now use (Ctrl k + d) to change types back to var!
-            string forVarPeople = "Nice!";
+            var forVarPeople = "Nice!";
 
             Console.WriteLine(forVarPeople);
         }
@@ -45,7 +45,7 @@ namespace Productivity15._8
         // Click in the if statements and type (Ctrl + .) to invert them.
         public void InvertIfElse()
         {
-            bool tru = true;
+            var tru = true;
             //Bool expressions
             if (tru)
             {
@@ -130,9 +130,9 @@ namespace Productivity15._8
         {
             List<int> intList = new List<int>() { 1, 2, 3 };
 
-            for (int i = 0; i < intList.Count; i++)
+            for (var i = 0; i < intList.Count; i++)
             {
-                int num = intList[i];
+                var num = intList[i];
                 Console.WriteLine(intList[num]);
             }
         }

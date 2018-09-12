@@ -48,7 +48,7 @@ csharp_style_expression_bodied_methods = false:suggestion
 #Style - implicit and explicit types
 
 #prefer explicit type over var to declare variables with built-in system types such as int
-csharp_style_var_for_built_in_types = false:suggestion
+csharp_style_var_for_built_in_types = true:suggestion
 #prefer explicit type over var when the type is already mentioned on the right-hand side of a declaration
 csharp_style_var_when_type_is_apparent = false:suggestion
 
