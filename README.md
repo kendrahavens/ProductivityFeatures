@@ -6,7 +6,7 @@ This repo contains a simple console app that demonstrates several codefixes and 
 - Clone the repo and follow the comments in the code.
 - The instructions will require the [Intellicode extension](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.VSIntelliCode) for Visual Studio.
 - You can also view the commit history see what each codefix and refactoring can do.
-- Check out the [Visual Studio Productivity guide](aka.ms/vs2017guide) for more features!
+- Check out the [Visual Studio Productivity guide](https://aka.ms/vs2017guide) for more features!
 
 ## Features included in tutorial
 - Code clean-up (Ctrl + k, d)
