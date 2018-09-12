@@ -123,9 +123,8 @@ namespace Productivity15._8
         {
             List<int> intList = new List<int>() { 1, 2, 3 };
 
-            for (var i = 0; i < intList.Count; i++)
+            foreach (var num in intList)
             {
-                var num = intList[i];
                 Console.WriteLine(intList[num]);
             }
         }
