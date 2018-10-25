@@ -46,7 +46,7 @@ namespace Productivity15._8
         public void InvertIfElse()
         {
             var tru = true;
-            //Bool expressions
+            // Bool expressions
             if (tru)
             {
                 Console.WriteLine("Truth!");
@@ -144,7 +144,7 @@ namespace Productivity15._8
         {
             var greetings = new List<string>() { "hi", "yo", "hello", "howdy" };
 
-            var shortGreeting =
+            IEnumerable<string> shortGreeting =
                 from greet in greetings
                 where greet.Length < 3
                 select greet;
