@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Productivity15._8
+namespace ProductivityFeatures
 {
-    class ShowMeUpdates
+    class Update158
     {
 
         // Code Cleanup
