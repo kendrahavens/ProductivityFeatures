@@ -17,14 +17,6 @@ namespace ProductivityFeatures
         public void WrapIndentAlignParameters(int a, int b, int c, int d, string e, string f, string g, string h, DateTime i, DateTime j, DateTime k)
         { }
 
-        // Convert anonymous type to tuple
-        // Place cursor in "anonymousType" below and type (Ctrl +.)
-        // Select convert to tuple
-        public void ConvertAnonymousTypeToTuple()
-        {
-            var anonymousType = new { Number = 108, String = "Hello" };
-        }
-
         // Use expression/block body for lambda
         // Place cursor after "=>" and type (Ctrl + .)
         // Select use block body for lambda expressions
@@ -113,7 +105,7 @@ namespace ProductivityFeatures
         // Type (Ctrl + t) and search "csproj"
         public void OpenCSprojWithDoubleClick() { }
 
-        // Fix for identify unused expression values and parameters
+        // Fix for identified unused expression values and parameters
         // Place cursor in by "x" to read the diagnostic. (no codefix)
         // Place cursor in x1 and type (Ctrl + .) to remove the unused variable.
         public string UnusedParameter(string x)
