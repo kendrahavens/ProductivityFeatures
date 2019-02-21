@@ -14,14 +14,16 @@ namespace ProductivityFeatures
 
         public void RegexParsingSupport()
         {
-            // 1. Classification and Brace/Reference Matching 
+            // Classification and Brace/Reference Matching 
+            // Place cursor in a parenthesis or bracket below to see the highlighted matching
             Match match = new Regex(@"(A|[B]|C)Test\1").Match("ATestC");
 
-            //2. Parser recovery enables multiple diagnostics and classification despite errors 
+            // Parser recovery enables multiple diagnostics and classification despite errors.
+            // Delete a parenthesis in the Regex below to view the parenthesis warning.
             Regex removeDuplicates =
                 new Regex(@"(?<=,|^)(?'word'[^,]*)(,\'word')+(?=,|$)");
 
-            //3. Enabled for specifically commented strings 
+            // Enabled for specifically commented strings 
             // Delete the extra "r" in "rregex" in the comment below this line to get regex support.
             // language=rregex,ExplicitCapture
             const string xmlTagMatcher = @"<([A-Z][A-Z0-9]*)\b[^>]*>(.*?)</1>";
@@ -145,11 +147,10 @@ namespace ProductivityFeatures
         // Select Convert to tuple
         public void ConvertAnonymousTypetoTuple()
         {
-            //object c = null;
             var myTuple = new { a = 1, b = 2 };
             var t2 = (3, "string");
 
-            Console.WriteLine(t2.Item2);
+            Console.WriteLine(t2.Item2, myTuple);
         }
 
         // Place cursor in 'new' keyword and type (Ctrl + .)
@@ -159,6 +160,6 @@ namespace ProductivityFeatures
             var myClass = new { str = "Hi" };
 
             Console.WriteLine(myClass.str);
-        }
+        } 
     }
 }

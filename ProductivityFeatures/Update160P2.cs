@@ -51,6 +51,8 @@ namespace ProductivityFeatures
         {
             int x = 1;
             x = x + 10;
+
+            Console.WriteLine(x);
         }
 
         // Fix Implicitly-typed variables cannot be constant
@@ -62,7 +64,7 @@ namespace ProductivityFeatures
             //const var v = "";
         }
 
-        //Command handler to replace `@$"` with `$@"` when typing interpolated verbatim string
+        // Replace `@$"` with `$@"` when typing interpolated verbatim string
         // When you type an interpolated string it's easy to type the '$@' out of order.
         // This command fixes it as you type.
         // Try typing "string myString = @$" below and watch the fix apply automatically!
@@ -111,7 +113,7 @@ namespace ProductivityFeatures
         // Type (Ctrl + t) and search "csproj"
         public void OpenCSprojWithDoubleClick() { }
 
-        //Fix for identify unused expression values and parameters
+        // Fix for identify unused expression values and parameters
         // Place cursor in by "x" to read the diagnostic. (no codefix)
         // Place cursor in x1 and type (Ctrl + .) to remove the unused variable.
         public string UnusedParameter(string x)
