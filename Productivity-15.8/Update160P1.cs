@@ -160,16 +160,5 @@ namespace ProductivityFeatures
 
             Console.WriteLine(myClass.str);
         }
-
-        // TBD demo
-        #region
-        //public void FindAllReferenceCodeLensRazorSupport() { }
-
-        //public void ExportSettingstoEditorconfig() { }
-
-        //public void BreakBuildOnFormattingIssue() { }
-
-        //public void CodeMetricsNETCore() { }
-        #endregion
     }
 }

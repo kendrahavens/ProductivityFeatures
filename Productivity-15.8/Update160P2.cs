@@ -79,7 +79,7 @@ namespace ProductivityFeatures
         /// <summary>
         /// <see cref="foo">
         /// </summary>
-        public void WriteToF()
+        public void WriteToFoo()
         {
             Console.WriteLine(foo);
             foo = 1;
@@ -95,47 +95,30 @@ namespace ProductivityFeatures
         private static void RefF(ref int a) { a = 0; }
         private static void InF(in int a) { }
 
-        // TBD demo
-        #region
-        // Support for ??= compound operator to the UseCompound fix
-
-        // Add Editorconfig when_multiline option for csharp_prefer_braces
-
-        // Automatically close block comment on “/”
-        /*
-         * Typed some text and then pressed enter...
-         */
-
-        //Sync Namespace and Folder Name
-
-        //Convert to C# 8.0 index and range operator
-        // Must initialize with .NET Core 3.0 SDK
-        //void IndexAndRangeOperator()
-        //{
-        //    string[] names =
-        //    {
-        //        "Archimedes", "Pythagoras", "Euclid", "Socrates", "Plato"
-        //    };
-        //    foreach(var name in names[1..^1])
-        //    {
-
-        //    }
-
-        //}
-
-        // Completion for `#nullable enable|disable`
-        // Must have C# 8 installed with .NET Core 3.0 SDK
-        //#nullable 
-        #endregion
-
-
-        //Fix for identify unused expression values and parameters
-        // Place cursor in by "x" (Doesn't trigger)
-        public string UnusedParameter(string x)
+        // Automatically close block comment on "/"
+        // Typing "/" after "* " in a multi-line comment used to not end 
+        // the comment because of the space between "*" and "/".
+        // Now when typing "/" the space is automatically deleted so that it ends your comment block.
+        public void AutoCloseMultiLineComment()
         {
-            return "x";
+            ///*
+            // * Uncomment this block and type "/" after the "* " below to end the comment block
+            // * 
         }
 
+        // You can now open a csproj by double-clicking on a project in solution explorer
+        // File names listed in a csproj can also now show up in (Ctrl + t) navigation.
+        // Type (Ctrl + t) and search "csproj"
+        public void OpenCSprojWithDoubleClick() { }
+
+        //Fix for identify unused expression values and parameters
+        // Place cursor in by "x" to read the diagnostic. (no codefix)
+        // Place cursor in x1 and type (Ctrl + .) to remove the unused variable.
+        public string UnusedParameter(string x)
+        {
+            string x1 = "x";
+            return "x";
+        }
     }
 
     // Allow Extract Interface to remain in same file
@@ -146,16 +129,16 @@ namespace ProductivityFeatures
         public bool A() => false;
         public string B() => String.Empty;
     }
-
 }
 
 // Pull members up refactoring with dialog options
 // A dialog will appear to pull the Method up into the interface
 // Place your cursor in PullUpMethod and type (Ctrl + .)
-namespace PushUpTest
+namespace PullUp
 {
     public interface MyInterface
     {
+
     }
     public class MyClass : MyInterface
     {
