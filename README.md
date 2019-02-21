@@ -12,30 +12,30 @@ This repo contains a simple console app that demonstrates several codefixes and 
 
 ### Features added in Visual Studio 2019 update 16.0 Preview 2
 - New Roslyn classification colorization!
-- Wrap, indent, align parameters
-- Use expression/block body for lambda
-- Invert conditional expressions and logical operations
-- Convert to compound assignment
-- Implicitly-typed variables cannot be constant code fix
-- Replace `@$"` with `$@"` when typing interpolated verbatim string
-- Categorize references by Read/Write in Find All References window
-- Automatically close block comment on "/"
+- Wrap, indent, align parameters (Ctrl + .)
+- Use expression/block body for lambda (Ctrl + .)
+- Invert conditional expressions and logical operations (Ctrl + .)
+- Convert to compound assignment (Ctrl + .)
+- Implicitly-typed variables cannot be constant code fix (Ctrl + .)
+- Replace `@$"` with `$@"` when typing interpolated verbatim string (automatic)
+- Categorize references by Read/Write in Find All References window (Shift + F12)
+- Automatically close block comment on "/" (automatic)
 - Open a csproj by double-clicking on a project in solution explorer (.NET Core only)
-- Fix for identified unused expression values and parameters
-- Allow Extract Interface to remain in same file
-- Pull members up refactoring with dialog options
+- Fix for identified unused expression values and parameters (Ctrl + .)
+- Allow Extract Interface to remain in same file (Ctrl R, Ctrl I)
+- Pull members up refactoring with dialog options (Ctrl + .)
 
 ### Features added in Visual Studio 2019 update 16.0 Preview 1
 - Regex parsing support
-- Foreach to LINQ query
-- Foreach to LINQ method (call form)
-- Add missing usings on copy paste
-- Dead code analysis for unused private members
-- Add implied await code fix
-- Convert local function to method
-- Generate deconstructor
-- Convert anonymous type to tuple
-- Convert anonymous type to class
+- Foreach to LINQ query (Ctrl + .)
+- Foreach to LINQ method/call form (Ctrl + .)
+- Add missing usings on copy paste (Ctrl + .)
+- Dead code analysis for unused private members (Ctrl + .)
+- Add implied await code fix (Ctrl + .)
+- Convert local function to method (Ctrl + .)
+- Generate deconstructor (Ctrl + .)
+- Convert anonymous type to tuple (Ctrl + .)
+- Convert anonymous type to class (Ctrl + .)
 
 ### Features added in Visual Studio 2017 update 15.8
 - Format Document (Ctrl + k, d)
