@@ -1,14 +1,14 @@
 ﻿using System;
 
-namespace Productivity15._8
+namespace ProductivityFeatures
 {
     class Program
     {
         static void Main(string[] args)
         {
-            // The tips and tricks examples are in the ShowMeUpdates class
-            // Use (Ctrl+ click) to click on ShowMeUpdates to navigate there!
-            ShowMeUpdates show = new ShowMeUpdates();
+            // The tips and tricks examples are in the Update158 class
+            // Use (Ctrl+ click) to click on Update158 to navigate there!
+            Update158 show = new Update158();
         }
     }
 }

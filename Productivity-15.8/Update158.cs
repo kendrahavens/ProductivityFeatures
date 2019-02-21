@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Productivity15._8
+namespace ProductivityFeatures
 {
-    class ShowMeUpdates
+    class Update158
     {
 
         // Code Cleanup
@@ -151,7 +151,7 @@ namespace Productivity15._8
         }
 
         // Use Go to Enclosing Block to jump to the top of the block your cursor is in.
-        // Click inside the curly brace below and type (Ctrl + Alt + UpArrow) 
+        // Click inside the curly brace below and type (Shift + Alt + [) 
         // to jump to the top of the class.
     }
 
