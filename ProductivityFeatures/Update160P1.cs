@@ -160,6 +160,15 @@ namespace ProductivityFeatures
             var myClass = new { str = "Hi" };
 
             Console.WriteLine(myClass.str);
-        } 
+        }
+
+        // 16.0 Preview 1 features not included in this demo project
+        #region
+        //public void FindAllReferenceCodeLensRazorSupport() { }
+
+        //public void ExportSettingstoEditorconfig() { }
+
+        //public void CodeMetricsNETCore() { }
+        #endregion
     }
 }

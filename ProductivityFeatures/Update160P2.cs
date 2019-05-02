@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Drawing;
 
 namespace ProductivityFeatures
 {
@@ -9,6 +11,21 @@ namespace ProductivityFeatures
         // You can opt in/out of these new colors in Tools > Options > Environment > Preview Features 
         // with the checkbox "Use enhanced colors for C#".
         // As always, any feedback is appreciated!
+        public void NewColors(Update160P2 parameterNewColor)
+        {
+            var localVariableNewColor = 100;
+
+            // for keyword has new color
+            for (int i = 0; i < 10; i++)
+            {
+                localVariableNewColor--;
+                parameterNewColor--; // Overloaded operators get slightly different coloring too!
+            }
+        }
+        public static Update160P2 operator --(Update160P2 x)
+        {
+            return x;
+        }
 
         // This codefix will wrap/indent/align lists of parameters/arguments
         // Place cursor in a parameter and type (Ctrl + .)
@@ -67,7 +84,7 @@ namespace ProductivityFeatures
         }
 
         // Categorize references by Read/Write
-        // Select f and hit (Shift + F12) to open Find All References window
+        // Select foo and type (Shift + F12) to open Find All References window
         // Notice the new "Kind" column that lists different categories of references
         public int foo;
         /// <summary>
@@ -113,6 +130,26 @@ namespace ProductivityFeatures
             string x1 = "x";
             return "x";
         }
+
+        // Place cursor in "x" and type (Ctrl + .)
+        // Select "Remove redundant assignment" to eliminate the unused value assignment
+        public int UnusedValueAssigmentAndUnusedParameterDiagnostic(string s)
+        {
+            int x  = 1;
+            x = 2;
+            return x;
+        }
+
+        // 16.0 Preview 2 features not included in this demo project
+        #region
+
+        // Add Editorconfig when_multiline option for csharp_prefer_braces
+
+        //Sync Namespace and Folder Name
+
+        // Completion for `#nullable enable|disable`
+
+        #endregion
     }
 
     // Allow Extract Interface to remain in same file
@@ -130,11 +167,11 @@ namespace ProductivityFeatures
 // Place your cursor in PullUpMethod and type (Ctrl + .)
 namespace PullUp
 {
-    public interface MyInterface
+    public interface IMyInterface
     {
 
     }
-    public class MyClass : MyInterface
+    public class MyClass : IMyInterface
     {
         public void PullUpMethod()
         {
@@ -144,6 +181,8 @@ namespace PullUp
         // You can pull up members as well.
         // Place your cursor in pullUpString and type (Ctrl + .)
         public string pullUpString;
+
     }
+
 }
 
