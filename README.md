@@ -1,14 +1,27 @@
-#
-Visual Studio recent Productivity Features
+# Visual Studio recent productivity features
 
 ## Summary
 This repo contains a simple console app that demonstrates several codefixes and refactorings in recent Visual Studio versions.
 
 - Clone the repo and follow the comments in the code.
-- The instructions will require the [Intellicode extension](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.VSIntelliCode) for Visual Studio.
+- The editorconfig was generated with the [Intellicode extension](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.VSIntelliCode) for Visual Studio. I highly recommend it!
 - Check out the [Visual Studio Productivity guide](https://aka.ms/vs2017guide) for more features!
 
 ## Features included in tutorial
+
+### Features added in Visual Studio 2019 update 16.1 Preview 2
+- Move Type to Namespace (Ctrl + .)
+- Run code cleanup on solution/projects from Solution Explorer (Right-click)
+- Toggle block comments (Ctrl + Shift + /)
+- Initialize a private field from constructor and vice versa (Ctrl + .)
+- Make readonly struct fields writable (Ctrl + .)
+
+### Features added in Visual Studio 2019 update 16.1 Preview 1
+- Split/Merge nested if statements (Ctrl + .)
+- Regex Completion (Ctrl + space)
+- Wrap binary expressions (Ctrl + .)
+- Find All References 'Kind' column values for Namespaces and Types
+- Code fix to unseal a class (Ctrl + .)
 
 ### Features added in Visual Studio 2019 update 16.0 Preview 2
 - New Roslyn classification colorization!

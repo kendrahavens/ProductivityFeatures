@@ -44,6 +44,7 @@ namespace ProductivityFeatures
 
 namespace NewNamespace
 {
+    // Make readonly struct fields writable
     // Place your cursor in 'MyStruct'
     // Type (Ctrl+.) to trigger the Quik Actions and Refactoings menu
     // Select make readonly fields writable
