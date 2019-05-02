@@ -11,6 +11,8 @@ namespace ProductivityFeatures
             // Visual Studio 2017 Update 15.8
             // Visual Studio 2019 Update 16.0 Preview 1
             // Visual Studio 2019 Update 16.0 Preview 2
+            // Visual Studio 2019 Update 16.1 Preview 1
+            // Visual Studio 2019 Update 16.1 Preview 2
             // Use (Ctrl+ click) to click on Update158 to navigate there!
             Update158 show = new Update158();
         }

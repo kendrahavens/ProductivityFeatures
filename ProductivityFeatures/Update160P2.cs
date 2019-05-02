@@ -165,6 +165,7 @@ namespace ProductivityFeatures
 // Pull members up refactoring with dialog options
 // A dialog will appear to pull the Method up into the interface
 // Place your cursor in PullUpMethod and type (Ctrl + .)
+// Select 'Pull members up to base type'
 namespace PullUp
 {
     public interface IMyInterface
@@ -173,15 +174,16 @@ namespace PullUp
     }
     public class MyClass : IMyInterface
     {
+
         public void PullUpMethod()
         {
             System.Console.WriteLine("Hello World");
         }
 
-        // You can pull up members as well.
-        // Place your cursor in pullUpString and type (Ctrl + .)
-        public string pullUpString;
-
+        // You can pull up properties as well.
+        // Place your cursor in PullUpString and type (Ctrl + .)
+        // Select 'Pull members up to base type'
+        public string PullUpString { get; set; }
     }
 
 }
