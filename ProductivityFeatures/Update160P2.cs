@@ -13,7 +13,7 @@ namespace ProductivityFeatures
         // As always, any feedback is appreciated!
         public void NewColors(Update160P2 parameterNewColor)
         {
-            var localVariableNewColor = 100;
+            int localVariableNewColor = 100;
 
             // for keyword has new color
             for (int i = 0; i < 10; i++)
@@ -95,7 +95,7 @@ namespace ProductivityFeatures
             Console.WriteLine(foo);
             foo = 1;
             foo += 1;
-            var y = nameof(foo);
+            string y = nameof(foo);
 
             OutF(out foo);
             RefF(ref foo);
