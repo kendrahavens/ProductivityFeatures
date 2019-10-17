@@ -11,8 +11,10 @@ namespace ProductivityFeatures
     {
 
         // Convert a switch statement to a switch expression
-        // In your project file make sure the language version is set to preview since switch expressions are a new C# 8.0 feature
-        // Place your cursor in the switch keyword, type (Ctrl + .), and select Convert switch statement to expression
+        // In your project file make sure the language version is set to preview 
+        // since switch expressions are a new C# 8.0 feature.
+        // Place your cursor in the switch keyword, type (Ctrl + .)
+        // Select Convert switch statement to expression
         public void SwitchExpression()
         {
             int line = 1;
@@ -29,6 +31,7 @@ namespace ProductivityFeatures
         }
 
         // Generate a parameter
+        // Uncomment the x declaration below to cause an error.
         // Place your cursor in the variable name and type (Ctrl + .) and select Generate a variable
         public void GenerateParameter()
         {
