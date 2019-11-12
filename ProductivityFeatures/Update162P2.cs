@@ -1,4 +1,4 @@
-﻿// Sort Usings command is back seperate from the Remove Usings command
+// Sort Usings command is back, separate from the Remove Usings command
 // You can now find the Sort Usings command in Edit > Intellisense
 using System;
 using System.Collections.Generic;
