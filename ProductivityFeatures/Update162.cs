@@ -1,4 +1,4 @@
-// Sort Usings command is back, separate from the Remove Usings command
+﻿// Sort Usings command is back, separate from the Remove Usings command
 // You can now find the Sort Usings command in Edit > Intellisense
 using System;
 using System.Collections.Generic;
@@ -7,9 +7,8 @@ using System.Security.Cryptography.X509Certificates;
 
 namespace ProductivityFeatures
 {
-    class Update162P2
+    class Update162
     {
-
         // Convert a switch statement to a switch expression
         // In your project file make sure the language version is set to preview 
         // since switch expressions are a new C# 8.0 feature.

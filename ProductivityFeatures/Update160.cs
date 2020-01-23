@@ -1,17 +1,178 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Drawing;
+using System.Text;
+using System.Text.RegularExpressions;
+using System.Threading.Tasks;
 
 namespace ProductivityFeatures
 {
-    class Update160P2
+    class Update160
     {
+        public void RegexParsingSupport()
+        {
+            // Classification and Brace/Reference Matching 
+            // Place cursor in a parenthesis or bracket below to see the highlighted matching
+            Match match = new Regex(@"(A|[B]|C)Test\1").Match("ATestC");
+
+            // Parser recovery enables multiple diagnostics and classification despite errors.
+            // Delete a parenthesis in the Regex below to view the parenthesis warning.
+            Regex removeDuplicates =
+                new Regex(@"(?<=,|^)(?'word'[^,]*)(,\'word')+(?=,|$)");
+
+            // Enabled for specifically commented strings 
+            // Delete the extra "r" in "rregex" in the comment below this line to get regex support.
+            // language=rregex,ExplicitCapture
+            const string xmlTagMatcher = @"<([A-Z][A-Z0-9]*)\b[^>]*>(.*?)</1>";
+            UseMatcher(xmlTagMatcher);
+        }
+        public void UseMatcher(string xmlTagMatcher) => throw new NotImplementedException();
+
+        // Place cursor in foreach keyword and type (Ctrl + .)
+        // Select 'Convert to Linq' to convert to a query
+        public void ForeachLoopToLinqQuery()
+        {
+            var greetings = new List<string>()
+                { "hi", "yo", "hello", "howdy" };
+
+            IEnumerable<string> enumerable()
+            {
+                foreach (var greet in greetings)
+                {
+                    if (greet.Length < 3)
+                    {
+                        yield return greet;
+                    }
+                }
+
+                yield break;
+            }
+
+            var shortGreeting = enumerable();
+        }
+
+        // Place cursor in foreach keyword and type (Ctrl + .)
+        // Select 'Convert to Linq(call form)' to convert to a method
+        public void ForeachLoopToLinqMethod()
+        {
+            var greetings = new List<string>()
+                { "hi", "yo", "hello", "howdy" };
+
+            IEnumerable<string> enumerable()
+            {
+                foreach (var greet in greetings)
+                {
+                    if (greet.Length < 3)
+                    {
+                        yield return greet;
+                    }
+                }
+
+                yield break;
+            }
+
+            var shortGreeting = enumerable();
+        }
+
+        // A codefix for adding the needed "using" will appear on copy/pasted code
+        // Uncomment the text into the method below: string json = JsonConvert.SerializeObject(greetings);
+        // With your cursor in "JsonConvert" type (Ctrl + .)
+        // Select to add the Using Newtonsoft.Json
+        public void UsingRefAddedCopyPaste()
+        {
+            //string json = JsonConvert.SerializeObject("some json");
+        }
+
+        // Place cursor before the opening parenthesis in (3, "string");
+        // Type (Ctrl + .)
+        // Select Convert to struct
+        public void ConvertTupleToNamedStruct()
+        {
+            var tuple = (3, "string");
+
+            Console.WriteLine(tuple.Item2);
+        }
+
+        // Dead code analysis has improved to more accurately detect and remove unused code.
+        // Place your cursor in the method name below and type (Ctrl + .)
+        // Select remove unused member and it will delete the entire method and comment
+        private void DeadCodeAnalysOnPrivateMembers()
+        {
+            Console.WriteLine("Never run.");
+        }
+
+        // Place cursor in the GetNumberAsync() in var x declaration.
+        // Type (Ctrl + .) and select Add await.
+        public async Task ForgotImpliedAwaitAsync()
+        {
+            var x = GetNumberAsync();
+
+            await GetNumberAsync();
+        }
+        private Task<object> GetNumberAsync()
+        {
+            throw new NotImplementedException();
+        }
+
+        // Place cursor in local HelloWorld method.
+        // Type (Ctrl + .) and select Convert to method
+        public void ConvertLocalFunctionToMethod()
+        {
+            string HelloWorld()
+            {
+                return "HelloWorld!";
+            }
+            Console.WriteLine(HelloWorld());
+        }
+
+        // Uncomment the text in the method below to cause an error.
+        // To fix the error in the method below
+        // Place your cursor in MyInternalClass and Type (Ctrl + .) 
+        // Select Generate method MyInternalClass.Deconstruct.
+        public void GenerateDeconstructMethod()
+        {
+            //(int x, int y) = new MyInternalClass();
+        }
+        private class MyInternalClass
+        {
+            public MyInternalClass()
+            {
+            }
+        }
+
+        // Place cursor in new and type (Ctrl + .)
+        // Select Convert to tuple
+        public void ConvertAnonymousTypetoTuple()
+        {
+            var myTuple = new { a = 1, b = 2 };
+            var t2 = (3, "string");
+
+            Console.WriteLine(t2.Item2, myTuple);
+        }
+
+        // Place cursor in 'new' keyword and type (Ctrl + .)
+        // Select Convert to class
+        public void ConvertAnonymousTypetoClass()
+        {
+            var myClass = new { str = "Hi" };
+
+            Console.WriteLine(myClass.str);
+        }
+
+        // 16.0 Preview 1 features not included in this demo project
+        #region
+        //public void FindAllReferenceCodeLensRazorSupport() { }
+
+        //public void ExportSettingstoEditorconfig() { }
+
+        //public void CodeMetricsNETCore() { }
+        #endregion
+
         // First thing you may notice are new colors according to Roslyn classification.
         // These colors are similar to the very popular Visual Studio Code colors.
         // You can opt in/out of these new colors in Tools > Options > Environment > Preview Features 
         // with the checkbox "Use enhanced colors for C#".
         // As always, any feedback is appreciated!
-        public void NewColors(Update160P2 parameterNewColor)
+        public void NewColors(Update160 parameterNewColor)
         {
             int localVariableNewColor = 100;
 
@@ -22,7 +183,7 @@ namespace ProductivityFeatures
                 parameterNewColor--; // Overloaded operators get slightly different coloring too!
             }
         }
-        public static Update160P2 operator --(Update160P2 x)
+        public static Update160 operator --(Update160 x)
         {
             return x;
         }
@@ -135,7 +296,7 @@ namespace ProductivityFeatures
         // Select "Remove redundant assignment" to eliminate the unused value assignment
         public int UnusedValueAssigmentAndUnusedParameterDiagnostic(string s)
         {
-            int x  = 1;
+            int x = 1;
             x = 2;
             return x;
         }
@@ -187,4 +348,3 @@ namespace PullUp
     }
 
 }
-
