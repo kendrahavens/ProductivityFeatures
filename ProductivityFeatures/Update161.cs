@@ -12,6 +12,11 @@ namespace ProductivityFeatures
     using System.Collections.Generic;
     using System.Linq;
 
+    // Move Type to Namespace	
+    // Place cursor in the class name and type (Ctrl + .)	
+    // Select 'Move Type to Namespace'	
+    // In the Move type to namespace dialog select 'NewNamespace'	
+    // This entire class was moved to the new namespace.
     class Update161
     {
         // Split if statements into nested if statements
