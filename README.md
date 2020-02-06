@@ -5,25 +5,46 @@ This repo contains a simple console app that demonstrates several codefixes and 
 
 - Clone the repo and follow the comments in the code.
 - The editorconfig was generated with the [Intellicode extension](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.VSIntelliCode) for Visual Studio. I highly recommend it!
-- Check out the [Visual Studio Productivity guide](https://aka.ms/vs2017guide) for more features!
+- Check out the [Visual Studio Productivity guide](https://aka.ms/productivityguide) for more features!
 
 ## Features included in tutorial
 
-### Features added in Visual Studio 2019 update 16.1 Preview 2
+### Features added in Visual Studio 2019 update 16.5
+- Extract local function (Ctrl + .)
+- Simplify interpolated string (Ctrl + .)
+- Completion for unimported types and extension methods (Ctrl + space)
+- Convert if statement to switch statement or expression (Ctrl + .)
+- Make method static (Ctrl + .)
+
+### Features added in Visual Studio 2019 update 16.4
+- Configure severity level of a code style rule directly through the editor
+- Add null checks for all parameters
+- Go to Base (Alt + Home)
+- Make a local function static (Ctrl + .)
+- Pass variable explicitly in local static function (Ctrl + .)
+
+### Features added in Visual Studio 2019 update 16.3
+- Rename a file when renaming a class, interface, or enum (Ctrl + R, R)
+
+### Features added in Visual Studio 2019 update 16.2
+- Convert switch statement to switch expresssion (Ctrl + .)
+- Generate parameter (Ctrl + .)
+
+### Features added in Visual Studio 2019 update 16.1
 - Move Type to Namespace (Ctrl + .)
 - Run code cleanup on solution/projects from Solution Explorer (Right-click)
 - Toggle block comments (Ctrl + Shift + /)
 - Initialize a private field from constructor and vice versa (Ctrl + .)
 - Make readonly struct fields writable (Ctrl + .)
-
-### Features added in Visual Studio 2019 update 16.1 Preview 1
 - Split/Merge nested if statements (Ctrl + .)
 - Regex Completion (Ctrl + space)
 - Wrap binary expressions (Ctrl + .)
 - Find All References 'Kind' column values for Namespaces and Types
 - Code fix to unseal a class (Ctrl + .)
 
-### Features added in Visual Studio 2019 update 16.0 Preview 2
+### Features added in Visual Studio 2019 update 16.0
+- IntelliCode smart completions enabled by default
+- IntelliCode repeated edits refactorings (in preview)
 - New Roslyn classification colorization!
 - Wrap, indent, align parameters (Ctrl + .)
 - Use expression/block body for lambda (Ctrl + .)
@@ -37,8 +58,6 @@ This repo contains a simple console app that demonstrates several codefixes and 
 - Fix for identified unused expression values and parameters (Ctrl + .)
 - Allow Extract Interface to remain in same file (Ctrl R, Ctrl I)
 - Pull members up refactoring with dialog options (Ctrl + .)
-
-### Features added in Visual Studio 2019 update 16.0 Preview 1
 - Regex parsing support
 - Foreach to LINQ query (Ctrl + .)
 - Foreach to LINQ method/call form (Ctrl + .)
