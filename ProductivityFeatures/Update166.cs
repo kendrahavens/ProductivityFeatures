@@ -12,7 +12,6 @@ namespace ProductivityFeatures
 {
     class Update166
     {
-
         // Convert between regular string literals and verbatim string literals
         // Place your cursor on the regular string or verbatim string and type (Ctrl + .)
         // Select Convert to verbatim string or Convert to regular string
@@ -52,12 +51,13 @@ namespace ProductivityFeatures
         }
 
         // Add explicit cast when an expression cannot be implicitly cast
+        // Uncomment the string b declaration to cause an error
         // Place your cursor on the error and type (Ctrl + .) 
         // Select Add explicit cast
         static void AddExplicitCast(string[] args)
         {
             object a = "1";
-            string b = a;
+            //string b = a;
         }
     }
 }
