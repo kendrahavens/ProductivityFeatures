@@ -49,6 +49,7 @@ namespace ProductivityFeatures
         /// </value>
         public void XMLDocumentation()
         {
+            
         }
 
         // Add explicit cast when an expression cannot be implicitly cast
@@ -59,5 +60,7 @@ namespace ProductivityFeatures
             object a = "1";
             string b = a;
         }
+
+        
     }
 }
