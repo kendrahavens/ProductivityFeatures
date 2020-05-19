@@ -8,11 +8,20 @@ This repo contains a simple console app that demonstrates several codefixes and 
 
 ## Features included in tutorial
 
+### Features added in Visual Studio 2019 update 16.7 preview
+* Add debugger display attribute code fix (Ctrl + .)
+* Generate comparison operators for types that implement IComparable (Ctrl + .)
+* Generate Equals(object) will generate IEquatable, equals, and not equals operators (Ctrl + .)
+* Create and assign properties or fields for all unused constructor parameters (Ctrl + .)
+* Code fix for accidental assignments or comparisons to the same variable (Ctrl + .)
+* Intellisense completion for DateTime and TimeSpan literals (Ctrl + space)
+* Add parameter in Change Signature dialog (Ctrl + .)
+
 ### Features added in Visual Studio 2019 update 16.6 ([release notes](https://docs.microsoft.com/en-us/visualstudio/releases/2019/release-notes))
-* Convert regular string literals to verbatim string literals (and back) refactoring  (Ctrl + .)
-* Simplify conditional expressions refactoring  (Ctrl + .)
+* Convert regular string literals to verbatim string literals (and back) refactoring (Ctrl + .)
+* Simplify conditional expressions refactoring (Ctrl + .)
 * Quick Info style support for XML comments that contain returns and value tags  (Hover over type to see quick info)
-* Add explicit cast code fix  (Ctrl + .)
+* Add explicit cast code fix (Ctrl + .)
 
 ### Features added in Visual Studio 2019 update 16.5
 - Extract local function (Ctrl + .)
