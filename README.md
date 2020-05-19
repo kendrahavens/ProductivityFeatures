@@ -9,6 +9,12 @@ This repo contains a simple console app that demonstrates several codefixes and 
 
 ## Features included in tutorial
 
+### Features added in Visual Studio 2019 update 16.6 ([release notes](https://docs.microsoft.com/en-us/visualstudio/releases/2019/release-notes))
+* Convert regular string literals to verbatim string literals (and back) refactoring  (Ctrl + .)
+* Simplify conditional expressions refactoring  (Ctrl + .)
+* Quick Info style support for XML comments that contain returns and value tags  (Hover over type to see quick info)
+* Add explicit cast code fix  (Ctrl + .)
+
 ### Features added in Visual Studio 2019 update 16.5
 - Extract local function (Ctrl + .)
 - Simplify interpolated string (Ctrl + .)
