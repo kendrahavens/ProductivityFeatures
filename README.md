@@ -4,7 +4,6 @@
 This repo contains a simple console app that demonstrates several codefixes and refactorings in recent Visual Studio versions.
 
 - Clone the repo and follow the comments in the code.
-- The editorconfig was generated with the [Intellicode extension](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.VSIntelliCode) for Visual Studio. I highly recommend it!
 - Check out the [Visual Studio Productivity guide](https://aka.ms/productivityguide) for more features!
 
 ## Features included in tutorial
