@@ -33,7 +33,8 @@ namespace ProductivityFeatures
         }
 
         // Create and initialize properties or fields for all unused constructor parameters
-        // Place your cursor on the remaining parameter, type (Ctrl + .)
+        // Place your cursor on one of the remaining parameters, "id" or "lastName"
+        // Type (Ctrl + .)
         // To create and initialize fields, select Create and assign remaining as fields
         // To create and initialize properties, select Create and assign remaining as properties
         private readonly string name;
@@ -50,11 +51,13 @@ namespace ProductivityFeatures
             // Place your cursor on the warning, type (Ctrl + .)
             // Select Compare to <QualifiedName>.value
             if (age == age);
+
+            Console.WriteLine(id + lastName);
         }
 
         // IntelliSense completion in DateTime and TimeSpan string literals
         // Place your cursor inside the DateTime or TimeSpan string literal
-        // Type(Ctrl + space) to view the list of completions and a description of each character
+        // Type (Ctrl + space) to view the list of completions and a description of each character
         string date = DateTime.Now.ToString("mm:");
 
         // Add parameter in Change Signature dialog
