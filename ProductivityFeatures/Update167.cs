@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PullUp;
+using System;
 using System.Diagnostics.CodeAnalysis;
 
 namespace ProductivityFeatures
@@ -67,5 +68,23 @@ namespace ProductivityFeatures
         public void AddParameter(int value)
         {   
         }
+
+        // Warning and code fix when a suppression operator is present but has no effect
+        // Place your cursor in the warning on "!is" and type (Ctrl + .)
+        // Select from 'Remove Operator' or 'Negate expression'
+        public void RemoveUnecessarrySuppressionOperator()
+        {
+            int a = 0;
+            if (a !is 0) { }
+        }
+
+        // Generate properties when generating a constructor in a type
+        // Uncomment the line below to cause an error since there is no constructor.
+        // Place cursor in error and type (Ctrl + .)
+        // Select Generate constructor with properties
+        public void GeneratePropertiesWithConstructor()
+        {
+            //new Update167(1);
+        }       
     }
 }
