@@ -16,6 +16,8 @@ This repo contains a simple console app that demonstrates several codefixes and 
 * Code fix for accidental assignments or comparisons to the same variable (Ctrl + .)
 * Intellisense completion for DateTime and TimeSpan literals (Ctrl + space)
 * Add parameter in Change Signature dialog (Ctrl + .)
+* Warning and code fix when a suppression operator is present but has no effect (Ctrl + .)
+* Generate properties when generating a constructor (Ctrl + .)
 
 ### Features added in Visual Studio 2019 update 16.6 ([release notes](https://docs.microsoft.com/en-us/visualstudio/releases/2019/release-notes))
 * Convert regular string literals to verbatim string literals (and back) refactoring (Ctrl + .)
