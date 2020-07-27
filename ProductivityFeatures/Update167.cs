@@ -64,5 +64,20 @@ namespace ProductivityFeatures
         public void AddParameter(int value)
         {   
         }
+
+        // The null suppression operator warning and code fix 
+        // Helps you easily identify and fix a suppression operator that has no effect
+        // Place your cursor on the suppression operator
+        // Press Ctrl+. to trigger the Quick Actions and Refactorings menu
+        // Next, select from one of the following:
+        // To remove the operator completely, select Remove operator (preserves semantics)
+        // To negate the expression, select Negate expression (change semantics)
+        private object SuppressionOperator(object args)
+        {
+            if (SuppressionOperator(args)! is 0)
+            {
+            }
+            throw new NotImplementedException();
+        }
     }
 }

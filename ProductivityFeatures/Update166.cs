@@ -20,7 +20,6 @@ namespace ProductivityFeatures
         {
             Console.WriteLine("Hello World!\r\nclass C\r\n{\r\n\tvoidM()\r\n\t{\r\n\t}\r\n}");
         }
-
         void SimplifyConditionalExpressions(string someString, int anotherInt)
         {
             // Simplify conditional expressions
@@ -53,12 +52,13 @@ namespace ProductivityFeatures
         }
 
         // Add explicit cast when an expression cannot be implicitly cast
+        // Uncomment the text below: string b = a;
         // Place your cursor on the error and type (Ctrl + .) 
         // Select Add explicit cast
         static void AddExplicitCast(string[] args)
         {
             object a = "1";
-            string b = a;
+            // string b = a;
         }
 
         
