@@ -51,7 +51,6 @@ namespace ProductivityFeatures
 
         // Add explicit cast when an expression cannot be implicitly cast
         // Uncomment the text below: string b = a;
-        // Place your cursor on the error and type (Ctrl + .) 
         // Select Add explicit cast
         static void AddExplicitCast(string[] args)
         {

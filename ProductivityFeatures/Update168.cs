@@ -45,7 +45,7 @@ namespace ProductivityFeatures
             //RemoveInKeyword(in value);
         }
 
-        // Introduces new C#9 pattern combinators
+        // Introduce new C#9 pattern combinators
         // Along with the pattern matching suggestions such as converting ‘==’ to use ‘is’ where applicable,
         // This code fix also suggests the pattern combinators `and`, `or` and `not` when matching multiple different patterns and negating
         // Place your cursor inside the statement, press (Ctrl+.) 
@@ -89,7 +89,5 @@ namespace ProductivityFeatures
 
     // There is now interactive window support for multiple runtimes, such as .NET Framework and.NET Core.
 
-    // Legacy FxCop format SuppressMessageAttribute showed performance problems in IDE as well as build. 
-    // So, now we show an IDE suggestion to convert this to Roslyn format SuppressMessageAttribute with a code fix. 
-    // This analyzer is supported on build.
+    // There is a new RegisterAdditionalFileAction API that allows analyzer authors to create an analyzer for additional files.
 }
