@@ -55,7 +55,7 @@ namespace ProductivityFeatures
         static void AddExplicitCast(string[] args)
         {
             object a = "1";
-            // string b = a;
+            //string b = a;
         }
     }
 }
