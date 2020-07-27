@@ -12,7 +12,6 @@ namespace ProductivityFeatures
 {
     class Update166
     {
-
         // Convert between regular string literals and verbatim string literals
         // Place your cursor on the regular string or verbatim string and type (Ctrl + .)
         // Select Convert to verbatim string or Convert to regular string
@@ -48,7 +47,6 @@ namespace ProductivityFeatures
         /// </value>
         public void XMLDocumentation()
         {
-            
         }
 
         // Add explicit cast when an expression cannot be implicitly cast
@@ -60,7 +58,5 @@ namespace ProductivityFeatures
             object a = "1";
             // string b = a;
         }
-
-        
     }
 }
