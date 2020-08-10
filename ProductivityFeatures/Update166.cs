@@ -19,7 +19,6 @@ namespace ProductivityFeatures
         {
             Console.WriteLine("Hello World!\r\nclass C\r\n{\r\n\tvoidM()\r\n\t{\r\n\t}\r\n}");
         }
-
         void SimplifyConditionalExpressions(string someString, int anotherInt)
         {
             // Simplify conditional expressions
@@ -51,8 +50,7 @@ namespace ProductivityFeatures
         }
 
         // Add explicit cast when an expression cannot be implicitly cast
-        // Uncomment the string b declaration to cause an error
-        // Place your cursor on the error and type (Ctrl + .) 
+        // Uncomment the text below: string b = a;
         // Select Add explicit cast
         static void AddExplicitCast(string[] args)
         {

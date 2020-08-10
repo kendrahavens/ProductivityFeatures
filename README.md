@@ -8,6 +8,32 @@ This repo contains a simple console app that demonstrates several codefixes and 
 
 ## Features included in tutorial
 
+### Features added in Visual Studio 2019 update 16.8
+- Remove unnecessary pragma suppressions and SuppressMessageAttribute (Ctrl + .)
+- Remove 'in' keyword code fix (Ctrl + .)
+- Introduces new C#9 pattern combinators (Ctrl + .)
+- Make class abstract code fix (Ctrl + .)
+- Interactive window support for multiple runtimes, such as .NET Framework and.NET Core
+- New RegisterAdditionalFileAction API that allows analyzer authors to create an analyzer for additional files
+- Rename and Find All References now understands references to symbols within the target string of global SuppressMessageAttribute suppressions (Ctrl + R, R) (Shift + F12)
+
+### Features added in Visual Studio 2019 update 16.7
+- Add debugger display attribute (Ctrl + .)
+- Generate comparison operators (Ctrl + .)
+- Generate IEquatable operators (Ctrl + .)
+- Create and initialize properties or fields for all unused constructor parameters (Ctrl + .)
+- Code fix for accidental assignments and comparisons (Ctrl + .)
+- IntelliSense completion in DateTime and TimeSpan string literals (Ctrl + Space)
+- Add parameter in Change Signature dialog (Ctrl + .)
+- Suppression operator warning and code fix (Ctrl + .)
+
+### Features added in Visual Studio 2019 update 16.6
+- Add explicit cast (Ctrl + .)
+- Convert between regular and verbatim string literals (Ctrl + .)
+- Simplify conditional expressions (Ctrl + .)
+- Quick info XML style support for <returns> and <value>
+- Add file header (Ctrl + .)
+=======
 ### Features added in Visual Studio 2019 update 16.7 preview
 * Add debugger display attribute code fix (Ctrl + .)
 * Generate comparison operators for types that implement IComparable (Ctrl + .)

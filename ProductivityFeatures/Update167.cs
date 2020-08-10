@@ -1,4 +1,4 @@
-﻿using PullUp;
+
 using System;
 using System.Diagnostics.CodeAnalysis;
 
@@ -53,12 +53,15 @@ namespace ProductivityFeatures
             // Select Compare to <QualifiedName>.value
             if (age == age);
 
+
             Console.WriteLine(id + lastName);
+
         }
 
         // IntelliSense completion in DateTime and TimeSpan string literals
         // Place your cursor inside the DateTime or TimeSpan string literal
-        // Type (Ctrl + space) to view the list of completions and a description of each character
+        // Type(Ctrl + space) to view the list of completions and a description of each character
+
         string date = DateTime.Now.ToString("mm:");
 
         // Add parameter in Change Signature dialog
@@ -67,6 +70,22 @@ namespace ProductivityFeatures
         // Within the Change Signature dialog select Add to add a parameter
         public void AddParameter(int value)
         {   
+        }
+
+
+        // The null suppression operator warning and code fix 
+        // Helps you easily identify and fix a suppression operator that has no effect
+        // Place your cursor on the suppression operator
+        // Press Ctrl+. to trigger the Quick Actions and Refactorings menu
+        // Next, select from one of the following:
+        // To remove the operator completely, select Remove operator (preserves semantics)
+        // To negate the expression, select Negate expression (change semantics)
+        private object SuppressionOperator(object args)
+        {
+            if (SuppressionOperator(args)! is 0)
+            {
+            }
+            throw new NotImplementedException();
         }
 
         // Warning and code fix when a suppression operator is present but has no effect
