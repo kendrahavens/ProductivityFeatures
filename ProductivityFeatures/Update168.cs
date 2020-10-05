@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
+using System.IO;
 
 // Find All References now understands references to symbols within the target string of global SuppressMessageAttribute suppressions
 // Place your cursor on the SuppressMessageAttribute target string, press Shift+F12 to Find All References
@@ -109,7 +110,7 @@ namespace ProductivityFeatures
 
     // Inline method refactoring
     // Helps you replace usages of a static, instance, and extension method within a single statement body
-    // Place your cursor on the usage of the method, press (Ctrl+.)
+    // Place your cursor on the LogError method call, press (Ctrl+.)
     // Select Inline <QualifiedMethodName>
     abstract class Person
     {
