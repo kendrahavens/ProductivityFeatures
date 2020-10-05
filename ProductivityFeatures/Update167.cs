@@ -74,7 +74,7 @@ namespace ProductivityFeatures
         // To negate the expression, select Negate expression (change semantics)
         private object SuppressionOperator(object args)
         {
-            if (SuppressionOperator(args)! is 0)
+            if (SuppressionOperator(args) !is string bar)
             {
             }
             throw new NotImplementedException();

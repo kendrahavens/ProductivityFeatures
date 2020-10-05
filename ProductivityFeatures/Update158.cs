@@ -6,12 +6,11 @@ namespace ProductivityFeatures
 {
     class Update158
     {
-
         // Format Document
         // Press (Ctrl k, d) to format the spacing below.
-        public void FixSpacing     (        )
-                    {
-            }
+        public void FixSpacing()
+        {
+        }
 
         // Code Cleanup
         // If you'd like Code cleanup to include var and explicit type rules
@@ -96,16 +95,16 @@ namespace ProductivityFeatures
         {
             MethodA(0 /*, "add this parameter"*/);
         }
+
         public void MethodA(int zero)
         {
-
         }
 
         // Place you cursor beside the grayed out parenthesis in the if statement.
         // Type (Ctrl + .) to remove the extra parenthesis.
         public void RemoveParenthesis()
         {
-            if ((true) && !(2>1)) { }
+            if ((true) && !(2 > 1)) { }
         }
 
         // Place your cursor in the for loop statement.
@@ -113,9 +112,9 @@ namespace ProductivityFeatures
         // Use (Ctrl + .) to convert it back into a for loop.
         public void ForLoopToForEach()
         {
-            List<int> intList = new List<int>() { 1,2,3};
+            List<int> intList = new List<int>() {1, 2, 3};
 
-            for(int i = 0; i < intList.Count; i++)
+            for (int i = 0; i < intList.Count; i++)
             {
                 int num = intList[i];
                 Console.WriteLine(intList[num]);
@@ -127,7 +126,7 @@ namespace ProductivityFeatures
         // Type (Ctrl + .) to convert the linq query into a foreach loop.
         public void LinqToForEach()
         {
-            var greetings = new List<string>() { "hi", "yo", "hello", "howdy" };
+            var greetings = new List<string>() {"hi", "yo", "hello", "howdy"};
 
             var shortGreeting =
                 from greet in greetings
