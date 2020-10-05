@@ -1,4 +1,5 @@
-﻿using System;
+
+using System;
 using System.Diagnostics.CodeAnalysis;
 
 namespace ProductivityFeatures
@@ -33,7 +34,8 @@ namespace ProductivityFeatures
         }
 
         // Create and initialize properties or fields for all unused constructor parameters
-        // Place your cursor on the remaining parameter, type (Ctrl + .)
+        // Place your cursor on one of the remaining parameters, "id" or "lastName"
+        // Type (Ctrl + .)
         // To create and initialize fields, select Create and assign remaining as fields
         // To create and initialize properties, select Create and assign remaining as properties
         private readonly string name;
@@ -50,11 +52,16 @@ namespace ProductivityFeatures
             // Place your cursor on the warning, type (Ctrl + .)
             // Select Compare to <QualifiedName>.value
             if (age == age);
+
+
+            Console.WriteLine(id + lastName);
+
         }
 
         // IntelliSense completion in DateTime and TimeSpan string literals
         // Place your cursor inside the DateTime or TimeSpan string literal
         // Type(Ctrl + space) to view the list of completions and a description of each character
+
         string date = DateTime.Now.ToString("mm:");
 
         // Add parameter in Change Signature dialog
@@ -64,6 +71,7 @@ namespace ProductivityFeatures
         public void AddParameter(int value)
         {   
         }
+
 
         // The null suppression operator warning and code fix 
         // Helps you easily identify and fix a suppression operator that has no effect
@@ -79,5 +87,23 @@ namespace ProductivityFeatures
             }
             throw new NotImplementedException();
         }
+
+        // Warning and code fix when a suppression operator is present but has no effect
+        // Place your cursor in the warning on "!is" and type (Ctrl + .)
+        // Select from 'Remove Operator' or 'Negate expression'
+        public void RemoveUnecessarrySuppressionOperator()
+        {
+            int a = 0;
+            if (a !is 0) { }
+        }
+
+        // Generate properties when generating a constructor in a type
+        // Uncomment the line below to cause an error since there is no constructor.
+        // Place cursor in error and type (Ctrl + .)
+        // Select Generate constructor with properties
+        public void GeneratePropertiesWithConstructor()
+        {
+            //new Update167(1);
+        }       
     }
 }
