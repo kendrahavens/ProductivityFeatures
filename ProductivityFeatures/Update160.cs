@@ -392,6 +392,7 @@ namespace PullUp
     }
     public class MyClass : IMyInterface
     {
+        internal string b;
 
         public void PullUpMethod()
         {
