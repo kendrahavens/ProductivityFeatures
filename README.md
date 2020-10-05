@@ -18,38 +18,23 @@ This repo contains a simple console app that demonstrates several codefixes and 
 - Rename and Find All References now understands references to symbols within the target string of global SuppressMessageAttribute suppressions (Ctrl + R, R) (Shift + F12)
 
 ### Features added in Visual Studio 2019 update 16.7
-- Add debugger display attribute (Ctrl + .)
-- Generate comparison operators (Ctrl + .)
-- Generate IEquatable operators (Ctrl + .)
-- Create and initialize properties or fields for all unused constructor parameters (Ctrl + .)
-- Code fix for accidental assignments and comparisons (Ctrl + .)
+- Add debugger display attribute code fix (Ctrl + .)
+- Generate comparison operators for types that implement IComparable (Ctrl + .)
+- Generate Equals(object) will generate IEquatable, equals, and not equals operators (Ctrl + .)
+- Create and assign properties or fields for all unused constructor parameters (Ctrl + .)
+- Code fix for accidental assignments or comparisons to the same variable (Ctrl + .)
 - IntelliSense completion in DateTime and TimeSpan string literals (Ctrl + Space)
 - Add parameter in Change Signature dialog (Ctrl + .)
-- Suppression operator warning and code fix (Ctrl + .)
+- Warning and code fix when a suppression operator is present but has no effect (Ctrl + .)
+- Generate properties when generating a constructor (Ctrl + .)
 
 ### Features added in Visual Studio 2019 update 16.6
 - Add explicit cast (Ctrl + .)
 - Convert between regular and verbatim string literals (Ctrl + .)
 - Simplify conditional expressions (Ctrl + .)
-- Quick info XML style support for <returns> and <value>
+- Quick info XML style support that contain returns and value tags  (Hover over type to see quick info)
 - Add file header (Ctrl + .)
 =======
-### Features added in Visual Studio 2019 update 16.7 preview
-* Add debugger display attribute code fix (Ctrl + .)
-* Generate comparison operators for types that implement IComparable (Ctrl + .)
-* Generate Equals(object) will generate IEquatable, equals, and not equals operators (Ctrl + .)
-* Create and assign properties or fields for all unused constructor parameters (Ctrl + .)
-* Code fix for accidental assignments or comparisons to the same variable (Ctrl + .)
-* Intellisense completion for DateTime and TimeSpan literals (Ctrl + space)
-* Add parameter in Change Signature dialog (Ctrl + .)
-* Warning and code fix when a suppression operator is present but has no effect (Ctrl + .)
-* Generate properties when generating a constructor (Ctrl + .)
-
-### Features added in Visual Studio 2019 update 16.6 ([release notes](https://docs.microsoft.com/en-us/visualstudio/releases/2019/release-notes))
-* Convert regular string literals to verbatim string literals (and back) refactoring (Ctrl + .)
-* Simplify conditional expressions refactoring (Ctrl + .)
-* Quick Info style support for XML comments that contain returns and value tags  (Hover over type to see quick info)
-* Add explicit cast code fix (Ctrl + .)
 
 ### Features added in Visual Studio 2019 update 16.5
 - Extract local function (Ctrl + .)
