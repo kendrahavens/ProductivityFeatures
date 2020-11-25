@@ -1,9 +1,6 @@
-﻿using PullUp;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Diagnostics.CodeAnalysis;
 using System.IO;
-using System.Text;
 
 // Find All References now understands references to symbols within the target string of global SuppressMessageAttribute suppressions
 // Place your cursor on the SuppressMessageAttribute target string, press Shift+F12 to Find All References
