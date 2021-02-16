@@ -103,5 +103,6 @@ namespace ProductivityFeatures
         // Go To All will not display duplicate results across netcoreapp3.1 and netcoreapp2.0 as well as results for partial types that exist only to wrap another nested type
 
         // Solution Explorer now displays the new .NET 5.0 Source Generators underneath the Analyzer node so you can easily navigate and view the generated code
+
     }
 }
