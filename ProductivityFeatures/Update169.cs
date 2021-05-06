@@ -14,16 +14,21 @@ namespace ProductivityFeatures
 
         // Regex r = new Regex("");
 
-        [SuppressMessage("style", "IDE0059", Justification = "<>")]
-
         static void M(string[] args)
         {
-            // Diagnostic tooltip for pragma warnings
-            // Hover your cursor over the diagnostic ID within the pragma warning
+            // Preprocessor symbols now have IntelliSense completion
+            // Uncomment the text below: #if
+            // Place your cursor after the #if directive, press space, and start typing a preproecessor symbol or start typing the following text: N
+            // Notice the new completion options for symbols that are currently defined in scope
+
+// #if 
+
+            // Diagnostic tooltip for pragma warnings or numbers for suppressions
+            // Hover your cursor over the diagnostic ID or number within the pragma warning
             // Notice the new diagnostic tooltip
 #pragma warning disable CS0219
             var i = 0;
-#pragma warning restore CS0219
+#pragma warning restore 219
             var I2 = 0;
         }
 
@@ -94,5 +99,10 @@ namespace ProductivityFeatures
         // The .NET Code Style (IDE) analyzers can now be enforced on build via project properties
 
         // IntelliSense completion that automatically inserts a semicolon as a commit character for object creation and method symbol completion
+
+        // Go To All will not display duplicate results across netcoreapp3.1 and netcoreapp2.0 as well as results for partial types that exist only to wrap another nested type
+
+        // Solution Explorer now displays the new .NET 5.0 Source Generators underneath the Analyzer node so you can easily navigate and view the generated code
+
     }
 }

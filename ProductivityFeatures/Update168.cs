@@ -1,9 +1,10 @@
+
+﻿using System;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Text;
-using System.IO;
 
 // Find All References now understands references to symbols within the target string of global SuppressMessageAttribute suppressions
 // Place your cursor on the SuppressMessageAttribute target string, press Shift+F12 to Find All References
@@ -14,7 +15,6 @@ namespace ProductivityFeatures
 {
     // Rename now understands references to symbols within the target string of global SuppressMessageAttribute suppressions
     // Place your cursor on the class name, press Ctrl+R,R to rename the class
-    // Make sure to check "includes strings" in the rename window
     // Notice how the SuppressMessageAttribute reference will now reference the newly named class
     class Update168
     {
@@ -95,7 +95,7 @@ namespace ProductivityFeatures
             string today = DateTime.Now.ToString();
 
             // IntelliSense completion in DateTime string interpolation
-            // Place your cursor inside the string interpolation after date
+            // Place your cursor inside the string interpolation next to date
             // Type colon to view the list of completions and a description of each character
             Console.WriteLine($"Hello, {name}! It's {date} now.");
         }
@@ -133,11 +133,11 @@ namespace ProductivityFeatures
 
     // Other features in Update 16.8:
 
-    // Starting in .NET 5.0, Roslyn analyzers are included with the .NET SDK. Code analysis is enabled by default for projects that target .NET 5.0 or later.
+    // Starting in .NET 5.0, Roslyn analyzers are included with the .NET SDK. Code analysis is enabled, by default, for projects that target .NET 5.0 or later.
 
-    // There is now C# and Visual Basic support for inline parameter name hints that inserts adornments for literals, casted literals, and object instantiations prior to each argument in function calls. You can enable this in Tools > Options > Text Editor > C# > Advanced.
+    // There is now C# and Visual Basic support for inline parameter name hints that inserts adornments for literals, casted literals, and object instantiations prior to each argument in function calls. 
 
-    // There is now interactive window support for multiple runtimes, such as .NET Framework and .NET Core.
+    // There is now interactive window support for multiple runtimes, such as .NET Framework and.NET Core.
 
     // There is a new RegisterAdditionalFileAction API that allows analyzer authors to create an analyzer for additional files.
 
