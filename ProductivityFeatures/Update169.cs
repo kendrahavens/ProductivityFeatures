@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 
 namespace ProductivityFeatures
@@ -18,7 +19,8 @@ namespace ProductivityFeatures
         {
             // Preprocessor symbols now have IntelliSense completion
             // Uncomment the text below: #if
-            // Place your cursor after the #if directive, press space, and start typing a preproecessor symbol or start typing the following text: N
+            // Place your cursor after the #if directive, press space, and start typing a
+            // preproecessor symbol or start typing with "N"
             // Notice the new completion options for symbols that are currently defined in scope
 
 // #if 
@@ -88,21 +90,48 @@ namespace ProductivityFeatures
             public Person(string first, string last) => (FirstName, LastName) = (first, last);
         }
 
-        // Other features in Update 16.9:
-
         // Comment out new line when return is pressed while cursor is within a comment
+        // Put your cursor *inside* the comment below and type Enter
+        // Now the double forward slash "//" is automatically added to the beginning of the new line
+        public void ContinueCommentWithNewLine()
+        {
+            // Place your cursor HERE in the middle of this comment and type Enter.
+
+            // Note that if you type Enter at the end of a comment the next line is not
+            // automatically commented out.
+        }
 
         // Inline type hints for variables with inferred types and lambda parameter types
-
+        // Hold Alt+F1 to see the lamba parameter types in the call
         // Inline hints keyboard shortcut Alt+F1 to view hints at anytime
+        public void InlineTypeHintsForInferredTypesAndLambdaParameters()
+        {
+            Func<double, double> cube = x => x * x * x;
+            cube(2);
+
+            Func<int, int, int> constant = (_, _) => 42;
+        }
+
+        // IntelliSense completion that automatically inserts a semicolon as a commit character
+        // for object creation and method symbol completion
+        // Uncomment the DateTime declaration below
+        // Type "D" after "new" to bring up the intelisense completion list.
+        // Type ";" to accept (instead of clicking or typing Enter)
+        // the intellisense suggestion and complete the parenthesis and line
+        public void AutomaticallyAddSemicolon()
+        {
+            //DateTime t = new 
+        }
+
+        // Other features in Update 16.9:
 
         // The .NET Code Style (IDE) analyzers can now be enforced on build via project properties
 
-        // IntelliSense completion that automatically inserts a semicolon as a commit character for object creation and method symbol completion
+        // Go To All will not display duplicate results across netcoreapp3.1 and netcoreapp2.0
+        // as well as results for partial types that exist only to wrap another nested type
 
-        // Go To All will not display duplicate results across netcoreapp3.1 and netcoreapp2.0 as well as results for partial types that exist only to wrap another nested type
-
-        // Solution Explorer now displays the new .NET 5.0 Source Generators underneath the Analyzer node so you can easily navigate and view the generated code
+        // Solution Explorer now displays the new .NET 5.0 Source Generators underneath the Analyzer
+        // node so you can easily navigate and view the generated code
 
     }
 }

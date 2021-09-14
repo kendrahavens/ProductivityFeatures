@@ -8,6 +8,43 @@ This repo contains a simple console app that demonstrates several codefixes and 
 
 ## Features included in tutorial
 
+### Features added in Visual Studio 2022 update 17.0
+- C# 10.0 File-scoped namespace refactoring
+- Refactoring to prefer null check over type check
+- XML comments will now automatically generate an \<exception\> tag when a method explicitly throws exceptions
+- Navigate to decompiled sources is now on by default
+- Nullable reference types is now enabled by default for new .NET projects
+- Inheritance Margin is now enabled by default
+
+### Features added in Visual Studio 2019 update 16.10
+- Remove unused references
+- EditorConfig UI
+- Visually inspect and navigate the inheritance chain with inheritance margins
+- Argument completion in method calls
+- Smart Break Line for all type declarations that require braces as well as properties, events, fields, and object creation expressions.
+- Simplify LINQ expression refactoring
+- Code style preference for new lines
+- IntelliSense completion for casts, indexers, and operators
+- Debugger support for Source Generators
+- Find All References support for Source Generators
+- IntelliSense completion for Enum values
+
+### Features added in Visual Studio 2019 update 16.9
+- Automatically add using directives when copying and pasting from a file
+- Preprocessor symbols now have IntelliSense completion
+- Diagnostic tooltip for pragma warnings or numbers for suppressions
+- Use 'new()' in non-contentious scenarios refactoring
+- Remove redundant equality code fix
+- Convert a regular string and a verbatim string to an interpolated string
+- Remove unnecessary discard code fix
+- Semantic colorization for C# 9.0 record types
+- Comment out new line when return is pressed while cursor is within a comment
+- Inline type hints for variables with inferred types and lambda parameter types
+- IntelliSense completion that automatically inserts a semicolon as a commit character
+- The .NET Code Style (IDE) analyzers can now be enforced on build via project properties
+- Go To All will not display duplicate results across netcoreapp3.1 and netcoreapp2.0 as well as results for partial types that exist only to wrap another nested type
+- Solution Explorer now displays the new .NET 5.0 Source Generators underneath the Analyzer node so you can easily navigate and view the generated code
+
 ### Features added in Visual Studio 2019 update 16.8
 - Remove unnecessary pragma suppressions and SuppressMessageAttribute (Ctrl + .)
 - Remove 'in' keyword code fix (Ctrl + .)
